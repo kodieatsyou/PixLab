@@ -125,6 +125,19 @@ public class PictureTester
     beach.fixUnderwater();
     beach.explore();
   }
+  
+  public static void testCopy2() {
+	  Picture snowman = new Picture("snowman.jpg");
+	  Picture beach = new Picture("beach.jpg");
+	  beach.copy2(snowman, 100, 100, 300, 300);
+	  beach.explore();
+  }
+  
+  public static void testMyCollage() {
+	  Picture trump = new Picture("trump.jpg");
+	  trump.myCollage();
+	  trump.explore();
+  }
 
 
   
@@ -146,11 +159,13 @@ public class PictureTester
     //testMirrorVerticalRightToLeft();
     //testMirrorHorizontal();
     //testMirrorHorizontalBotToTop();
-    testMirrorTemple();
-    testMirrorArms();
-    testMirrorGull();
+    //testMirrorTemple();
+    //testMirrorArms();
+    //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
+    testCopy2();
+    testMyCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
