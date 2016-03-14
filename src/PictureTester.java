@@ -138,6 +138,14 @@ public class PictureTester
 	  trump.myCollage();
 	  trump.explore();
   }
+  
+  public static void testEdgeDetection2()
+  {
+    Picture trump = new Picture("trump.jpg");
+    trump.edgeDetection(10);
+    trump.explore();
+  }
+
 
 
   
@@ -163,12 +171,12 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
-    testCopy2();
-    testMyCollage();
+    //testCollage();
+    //testCopy2();
+    //testMyCollage();
     //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
+    testEdgeDetection();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
